@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+}
+
+.navbar {
+  background-color: #3b0764;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .nav-list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-list .nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .nav-list .nav-link:hover {
+  color: #d8b4fe;
+}
+
+.hero {
+  background-color: #6b21a8;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+}
+
+.btn {
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn.btn-primario {
+  background-color: #3a125b;
+  color: white;
+}
+
+.btn.btn-grande {
+  padding: 15px 30px;
+  font-size: 18px;
+}
+
+.btn.btn-pequeno {
+  padding: 8px 14px;
+  font-size: 14px;
+}
+
+.btn.btn-sucesso {
+  background-color: #6b21a8;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.secao-cursos {
+  padding: 60px 0;
+  background-color: white;
+  text-align: center;
+}
+
+.secao-descricao {
+  color: #666;
+}
+
+.cursos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card-curso {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: left;
+  box-shadow: 0 3px 10px #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-curso h3 {
+  color: #3b0764;
+}
+
+.card-curso.card-curso-destaque h3 {
+  color: #6b21a8;
+}
+
+.card-header {
+  margin-bottom: 20px;
+}
+
+.card-descricao {
+  color: #555;
+  line-height: 1.5;
+}
+
+.card-lista {
+  padding-left: 20px;
+  line-height: 2;
+  flex-grow: 1;
+}
+
+.card-lista li::before {
+  content: "✓";
+  color: #6b21a8;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.preco {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3b0764;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.badge-iniciante {
+  background-color: #6b21a8;
+  color: #ffffff;
+}
+
+.badge-intermediario {
+  background-color: #6b21a8;
+  color: #ffffff;
+}
+
+.badge-avancado {
+  background-color: #6b21a8;
+  color: #ffffff;
+}
+
+.secao-sobre {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #faf5ff;
+}
+
+.sobre-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.sobre-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.card-numero {
+  font-size: 30px;
+  font-weight: bold;
+  color: #6b21a8;
+  margin-bottom: 15px;
+}
+
+.sobre-card p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.secao-contato {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.secao-contato h2,
+.secao-contato > .container > .secao-descricao {
+  text-align: center;
+}
+
+.formulario {
+  max-width: 700px;
+  margin: 40px auto 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #6b21a8;
+}
+
+.form-group input:invalid,
+.form-group textarea:invalid {
+  border-color: #371156;
+}
+
+.form-group input:valid,
+.form-group textarea:valid {
+  border-color: #804ea9;
+}
+
+.formulario .btn:hover {
+  opacity: 0.8;
+}
+
+.form-group.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group.checkbox input {
+  width: auto;
+}
+
+.form-group.checkbox label {
+  margin: 0;
+  font-weight: normal;
+}
+
+footer {
+  background-color: #3b0764;
+  color: white;
+  padding: 40px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  color: #e9d5ff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #e9d5ff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid #581c87;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+  color: #e9d5ff;
+}
+
+@media (max-width: 800px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cursos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
